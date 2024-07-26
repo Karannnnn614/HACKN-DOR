@@ -1,7 +1,7 @@
 {
   "name": "es6",
   "version": "1.0.0",
-  "description": "this is my first app",
+  "description": "Hackathon Project",
   "main": "index.js",
   "type": "module",
   "scripts": {
