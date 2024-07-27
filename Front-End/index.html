@@ -1,3 +1,414 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Management System</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        
+        
+        .div1 img {
+            
+            margin: 0;
+            padding: 0;
+            filter: opacity(4%);
+            
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            
+            
+            
+            
+            
+            
+        }
+        
+        
+        
+        
+        /* LOGIN */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            column-gap: 16vw;
+            margin-top: -34vw;
+           
+        
+            
+            
+        }
+        
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        p {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+
+        /* DASHBOARD */
+        
+        .dashboard {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 5vw;
+            border: 2px solid white;
+            background-color: rgb(254, 254, 254);
+            box-shadow: 5px 9px 5px rgb(221, 217, 217);
+            display: flex;
+            justify-content: space-around;
+            
+            
+        }
+        
+        .navbar ul{
+            display: flex;
+            gap: 50px;
+            margin: 20px;
+
+        }
+        
+        .navbar ul li{
+            list-style: none;
+            display: flex;
+            cursor: pointer;
+            
+        }
+        .sec2{ 
+            max-width: 50vw;
+            margin: auto;
+
+        }
+
+
+        .mc{
+            height: 20vw;
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+           
+            font-family: "poppins";
+           
+        }
+
+        
+        .big
+        {
+            font-weight: bold;
+
+        }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+/* #footeer */
+footer {
+  display: flex;
+  background: #33333300;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+
+
+        
+        
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            
+            
+            <div class="dashboard">
+                <div class="icon">
+                    <img width="200px" src="Screenshot 2024-07-27 063054.png" alt="">
+                </div>
+                
+                <div class="navbar">
+                    
+                    <ul >
+                        <li><a href="#Login">Home</a></li>
+                        <li><a href="#Signup">Signup</a></li>
+                        <li><a href="#Signup">Contact us</a></li>
+                        <li><a href="#Signup">Services</a></li>
+                        <!-- <li><a href="#Feedback">feedback</a></li> -->
+                        
+                    </ul>
+                </div>
+            </div>
+       
+
+
+    </header>
+
+
+    <main>
+        <section class="sec1">
+        </section>
+        <div class="container">
+            <div class="div1">
+                <img src="main-picture-1.jpg" alt="Image 1">
+            </div>
+
+        </div>
+        <section class="sec2">
+            <div class="login">
+
+                <!-- aa -->
+                <div class="container2">
+                    <div class="overview" >
+                        <div style="font-size: 48px;" class="mc">
+                            <div font aria-setsize="20px" class="big"> INDORE Munclipal Corporation</div> 
+                            <div style="font-size: 14px;"    class="small"> From work order management and inventory control to equipment tracking and maintenance scheduling,
+                                Workshop Management System designed to revolutionize the operations by providing a comprehensive, digital solution. By automating tasks, optimizing resource utilization, and generating valuable insights, we aim to streamline workflows, enhance efficiency, and ensure the effective management of municipal assets.
+                            </div>
+
+                        </div>
+                       
+                    
+                    
+                    </div>
+                    <div class="form-container">
+                        <form id="loginForm">
+                            <section id="Home"></section>
+                            <h2>Login</h2>
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password" required>
+                            <button type="submit">Login</button>
+                            <p>Don't have an account? <a href="#">Sign Up</a></p>
+                        </form>
+                        <form id="signUpForm" style="display: none;">
+                            <h2>Sign Up</h2>
+                            <input type="text" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="password" placeholder="Create Password" required>
+                            <input type="password" placeholder="Confirm Password" required>
+                            <button type="submit">Sign Up</button>
+                            <p>Already have an account? <a href="#">Login</a></p>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <footer>
+        <footer class="footer">
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        
+            </ul>
+            <p>&copy;2024| All Rights Reserved</p>
+          </footer>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        
+
+    </footer>
+</body>
+
+=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -172,4 +583,5 @@
     </footer>
 </body>
 
+>>>>>>> 516ad4d21639aa1f826a769424af9b4f12c0f5cd
 </html>
